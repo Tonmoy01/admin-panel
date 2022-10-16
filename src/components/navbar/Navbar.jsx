@@ -30,11 +30,13 @@ const Navbar = () => {
             {darkMode ? (
               <WbSunnyOutlinedIcon
                 className='icon'
+                style={{ cursor: 'pointer' }}
                 onClick={() => dispatch({ type: 'TOGGLE' })}
               />
             ) : (
               <DarkModeOutlinedIcon
                 className='icon'
+                style={{ cursor: 'pointer' }}
                 onClick={() => dispatch({ type: 'TOGGLE' })}
               />
             )}
